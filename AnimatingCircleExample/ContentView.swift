@@ -15,10 +15,10 @@ struct ContentView: View {
         Button("Tap Me"){
             self.scaleChanger += 0.2
             self.opacityValue += 0.6
-            }.frame(width: 100 , height: 100 , alignment: .center).background(Color.white).foregroundColor(.red).clipped()
+        }.frame(width: 100 , height: 100 , alignment: .center).foregroundColor(.red).clipped()
             .overlay(
             Circle()
-             .stroke(Color.blue)
+             .stroke(Color.accentColor)
                 .opacity(opacityValue)
          .scaleEffect(scaleChanger)
           
